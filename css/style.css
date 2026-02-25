@@ -1,6 +1,14 @@
 /*--------GENERICS--------*/
+
+*{
+    font-family: "Edu TAS Beginner", cursive;
+}
 body {
     background-image: url(../assets/img/cork.png);
+}
+
+img {
+    max-width: 100%;
 }
 
 /*--------UTILIYY--------*/
@@ -18,3 +26,13 @@ header {
     align-items: center;
     background-image: url(../assets/img/wall.png);
     }
+
+
+/*--------MAIN--------*/
+
+.card-pin {
+    position: absolute;
+    top: -3%;
+    left: 50%;
+    translate:-50% 3%;
+}
