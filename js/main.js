@@ -60,7 +60,7 @@ fetch(cardsEndpoint)
                             </div>`
 
             //console.log(markup);
-            section.innerHTML = markup
+            section.innerHTML += markup
         });
 
     })
