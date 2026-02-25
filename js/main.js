@@ -50,7 +50,7 @@ fetch(cardsEndpoint)
             console.log(typeof card.date.toUpper);
             
             const markup = `<div class="col-12 col-md-6 col-lg-4">
-                                <div class="card rounded-0">
+                                <div class="card rounded-0 shadow-lg">
                                     <div class="card-body position-relative">
                                         <img src="./assets/img/pin.svg" class="card-pin">
                                         <img src="${card.url}" class="card-img-top rounded-0">
