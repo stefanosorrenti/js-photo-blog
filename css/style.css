@@ -1,0 +1,20 @@
+/*--------GENERICS--------*/
+body {
+    background-image: url(../assets/img/cork.png);
+}
+
+/*--------UTILIYY--------*/
+
+
+/*--------HEADER--------*/
+header {
+    font-family: "Edu TAS Beginner", cursive;
+    font-size: 80%;
+    font-weight: 700;
+    font-style: normal;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/img/wall.png);
+    }
