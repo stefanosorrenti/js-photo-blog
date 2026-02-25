@@ -54,7 +54,7 @@ fetch(cardsEndpoint)
                                     <div class="card-body position-relative">
                                         <img src="./assets/img/pin.svg" class="card-pin">
                                         <img src="${card.url}" class="card-img-top rounded-0">
-                                        <p class="card-text mt-2">${card.title}, in data ${card.date}</p>
+                                        <p class="card-text mt-2 fs-4">${card.title}, in data ${card.date}</p>
                                     </div>
                                 </div>
                             </div>`
