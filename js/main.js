@@ -47,14 +47,15 @@ fetch(cardsEndpoint)
         cardsInfo.forEach(card => {
             //console.log(card);
             //console.log(card.title);
-            //console.log(card.date);
+            console.log(typeof card.date.toUpper);
             
             const markup = `<div class="col-12 col-md-6 col-lg-4">
                                 <div class="card rounded-0">
                                     <div class="card-body position-relative">
                                         <img src="./assets/img/pin.svg" class="card-pin">
                                         <img src="${card.url}" class="card-img-top rounded-0">
-                                        <p class="card-text mt-2 fs-4">${card.title}, in data ${card.date}</p>
+                                        <span class = "card-date mt-3">${card.date}</span>
+                                        <h2 class="card-text fs-4 fw-bold fw-max">${card.title.toUpperCase()}</h2>
                                     </div>
                                 </div>
                             </div>`

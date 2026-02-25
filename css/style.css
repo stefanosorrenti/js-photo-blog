@@ -12,13 +12,13 @@ img {
 }
 
 /*--------UTILIYY--------*/
-
+.fw-max {
+    font-weight: 700;
+}
 
 /*--------HEADER--------*/
 header {
-    font-family: "Edu TAS Beginner", cursive;
     font-size: 80%;
-    font-weight: 700;
     font-style: normal;
     min-height: 150px;
     display: flex;
@@ -30,7 +30,6 @@ header {
 
 h1.main-title {
     font-size: 50px;
-    font-weight: 700;
     color: black;
 }
 
@@ -43,7 +42,12 @@ h1.main-title {
     translate:-50% 3%;
 }
 
-
+.card-date {
+    font-family: "Sometype Mono", monospace;
+    display: block;
+    color: grey;
+    font-weight: 545;
+}
 
 
 /*MEDIA QUERY*/
