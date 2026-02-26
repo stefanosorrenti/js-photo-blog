@@ -21,6 +21,9 @@ img {
     font-weight: 700;
 }
 
+.shadw {
+    box-shadow: 0px 0px 6px black;
+}
 
 /*--------HEADER--------*/
 header {
@@ -41,6 +44,7 @@ h1.main-title {
 
 /*--------MAIN--------*/
 
+/*Cards*/
 .card-pin {
     position: absolute;
     top: -3%;
@@ -55,13 +59,24 @@ h1.main-title {
     font-weight: 545;
 }
 
+div.card.rounded-0:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 17px 4px black;
+    translate: 0% -10px;
+    transform: rotate(10deg);
+    transition: 500ms;
+    z-index: 1;
+
+    
+}
+
 /*Overlay*/
 .overlay {
     position: fixed;
     top: 50%;
     left: 50%;
     translate: -50% -50%;
-    z-index: 1;
+    z-index: 2;
     width: 600px;
     display: flex;
     flex-direction: column;
@@ -92,3 +107,4 @@ h1.main-title {
         font-size: 100px;
     }
 }
+

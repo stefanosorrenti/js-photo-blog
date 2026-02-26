@@ -18,6 +18,14 @@ Mini TASKS:
 1) Dopodiché facciamo sì che cliccando una qualunque foto. L’overlay ricompaia.
 2) Cliccando invece il button di chiusura, l’overlay scompare nuovamente.
 
+BONUS:
+1) Spostandosi col mouse sopra le foto, queste si zoommano, ruotano di 10 gradi e la loro ombra aumenta, 
+il tutto in manierà fluida. I
+2) Inoltre il mouse diventa un puntatore, per far capire all’utente che può cliccare
+
+//COSA DEVO FARE?
+Devo inserire la 'logica' in  quando le card sono in HOVER lato CSS
+
 //COSA DEVO FARE
     -Seleziono gli elementi
     -Salvo gl ielementi
@@ -87,7 +95,7 @@ fetch(cardsEndpoint)
         
         //Markup precedentemente identificato
         const markup = `<div class="col-12 col-md-6 col-lg-4">
-        <div class="card rounded-0 shadow-lg">
+        <div class="card rounded-0 shadw">
         <div class="card-body position-relative">
         <img src="./assets/img/pin.svg" class="card-pin">
         <img  id= "card-img" src="${card.url}" class="card-img-top rounded-0">
