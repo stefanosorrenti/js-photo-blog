@@ -10,6 +10,22 @@ Cosa devo fare?
 -Svolgo la logica AJAX (Selezionando i giusti elementi)
 -Modifico il markup
 
+
+
+
+CONSEGNA 2:
+Mini TASKS:
+1) Dopodiché facciamo sì che cliccando una qualunque foto. L’overlay ricompaia.
+2) Cliccando invece il button di chiusura, l’overlay scompare nuovamente.
+
+//COSA DEVO FARE
+    -Seleziono gli elementi
+    -Salvo gl ielementi
+    -Aggiungo un evento in ascolto
+    -Imposto la logica
+
+
+
 */
 
 
