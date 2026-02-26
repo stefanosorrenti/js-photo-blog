@@ -49,8 +49,19 @@ Mini TASKS:
 //Collezziono i dati che mi servono
 
 //DATA
+//DOM NODES SELECTION
 const section = document.querySelector('.container section'); 
+const overlay = document.querySelector('.overlay')
+const overlayButton = document.querySelector('.overlay button')
 //console.log(section);
+console.log(overlay);
+console.log(overlayButton);
+
+
+
+
+
+
 
 const cardsEndpoint = 'https://lanciweb.github.io/demo/api/pictures/'; //Salvo il mio endpoint
 
@@ -58,32 +69,56 @@ const cardsEndpoint = 'https://lanciweb.github.io/demo/api/pictures/'; //Salvo i
 
 fetch(cardsEndpoint)
 
-    .then(data => data.json()) //PROMISE
+.then(data => data.json()) //PROMISE
 
-    .then(cardsInfo => {    //PROMISE
+.then(cardsInfo => {    //PROMISE
+    
+    //SVOLGO LA LOGICA NELL'AJAX
+    //console.log(cardsInfo);
+    //console.log(typeof cardsInfo);
+    cardsInfo.forEach(card => {
+        //console.log(card);
+        //console.log(card.title);
+        //console.log(typeof card.date);
         
-        //SVOLGO LA LOGICA NELL'AJAX
-        //console.log(cardsInfo);
-        //console.log(typeof cardsInfo);
-        cardsInfo.forEach(card => {
-            //console.log(card);
-            //console.log(card.title);
-            //console.log(typeof card.date);
-            
-            //Markup precedentemente identificato
-            const markup = `<div class="col-12 col-md-6 col-lg-4">
-                                <div class="card rounded-0 shadow-lg">
-                                    <div class="card-body position-relative">
-                                        <img src="./assets/img/pin.svg" class="card-pin">
-                                        <img src="${card.url}" class="card-img-top rounded-0">
-                                        <span class = "card-date mt-3">${card.date}</span>
-                                        <h2 class="card-text fs-4 fw-bold fw-max">${card.title.toUpperCase()}</h2>
-                                    </div>
-                                </div>
-                            </div>`
+        //Markup precedentemente identificato
+        const markup = `<div class="col-12 col-md-6 col-lg-4">
+        <div class="card rounded-0 shadow-lg">
+        <div class="card-body position-relative">
+        <img src="./assets/img/pin.svg" class="card-pin">
+        <img  id= "card-img" src="${card.url}" class="card-img-top rounded-0">
+        <span class = "card-date mt-3">${card.date}</span>
+        <h2 class="card-text fs-4 fw-bold fw-max">${card.title.toUpperCase()}</h2>
+        </div>
+        </div>
+        </div>`
+        
+        //console.log(markup);
+        section.innerHTML += markup //Modifico il markup
+    });
+    
+    const images = document.querySelectorAll('section div.col-12')
+    //const imgsObj = []
 
-            //console.log(markup);
-            section.innerHTML += markup //Modifico il markup
-        });
+    images.forEach(image => {
+        console.log(image);
 
+        
+        image.addEventListener('click', function(){
+            overlay.className = 'overlay'
+        })
+        
     })
+    //console.log(imgsObj);
+    overlayButton.addEventListener('click', function(){
+        overlay.className += ' d-none'
+    })
+    
+})
+
+
+
+
+
+//FUNCTIONS
+
