@@ -62,11 +62,13 @@ const section = document.querySelector('.container section');
 const overlay = document.querySelector('.overlay')
 const overlayButton = document.querySelector('.overlay button')
 const overlayImg = document.getElementById('overlay-img')
+const overlayBg = document.querySelector('.overlay-bg')
 
 //console.log(section);
 //console.log(overlay);
 //console.log(overlayButton);
 //console.log(overlayImg.src);
+console.log(overlayBg);
 
 
 
@@ -118,10 +120,10 @@ fetch(cardsEndpoint)
     images.forEach(image => {
         //console.log(image.src);
         
-        
         image.addEventListener('click', function(){
             overlay.className = 'overlay'
             overlayImg.src = image.src
+            overlayBg.className = 'overlay-bg'
             
         })
         
@@ -129,7 +131,7 @@ fetch(cardsEndpoint)
     //console.log(imgsObj);
     overlayButton.addEventListener('click', function(){
         overlay.className += ' d-none'
-        
+        overlayBg.className += 'd-none'
     })
     
     

@@ -33,15 +33,15 @@ Non siete obbligati a usare Bootstrap: siete liberi di decidere come gestire lo 
 
 
 
-CONSEGNA
+CONSEGNA 2
 
 Milestone 1
 
-Facciamo in modo di creare un overlay che copra l’intera pagina e all’interno, centrata, disponiamo un’immagine qualunque ed un button di chiusura.
+Facciamo in modo di creare un overlay che copra l’intera pagina e all’interno, centrata, disponiamo un’immagine qualunque ed un button di chiusura. (X)
 
 Milestone 2
 
-Facciamo sparire l’overlay con l’aiuto di una classe CSS che imposti il display: none .
+Facciamo sparire l’overlay con l’aiuto di una classe CSS che imposti il display: none . (X)
 
 Dopodiché facciamo sì che cliccando una qualunque foto. L’overlay ricompaia.
 
