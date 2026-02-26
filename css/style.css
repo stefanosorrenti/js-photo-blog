@@ -1,12 +1,16 @@
 /*--------GENERICS--------*/
 
-*{
+* {
     font-family: "Edu TAS Beginner", cursive;
 }
+
 body {
     background-image: url(../assets/img/cork.png);
 }
 
+main {
+    position: relative;
+}
 img {
     max-width: 100%;
 }
@@ -26,7 +30,7 @@ header {
     justify-content: center;
     align-items: center;
     background-image: url(../assets/img/wall.png);
-    }
+}
 
 
 h1.main-title {
@@ -40,7 +44,7 @@ h1.main-title {
     position: absolute;
     top: -3%;
     left: 50%;
-    translate:-50% 3%;
+    translate: -50% 3%;
 }
 
 .card-date {
@@ -50,17 +54,36 @@ h1.main-title {
     font-weight: 545;
 }
 
+/*Overlay*/
+.overlay {
+    position: absolute;
+    top: -15%;
+    left: 50%;
+    translate: -50% 15%;
+    z-index: 1;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+
+.overlay button {
+    background-color: transparent;
+    border: none;
+    font-size: xx-large;
+    color: red;
+}
 /*--------MEDIA QUERY--------*/
 
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
     h1.main-title {
         font-size: 70px;
     }
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) {
     h1.main-title {
         font-size: 100px;
     }
