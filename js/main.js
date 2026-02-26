@@ -53,9 +53,13 @@ Mini TASKS:
 const section = document.querySelector('.container section'); 
 const overlay = document.querySelector('.overlay')
 const overlayButton = document.querySelector('.overlay button')
+const overlayImg = document.getElementById('overlay-img')
+
 //console.log(section);
-console.log(overlay);
-console.log(overlayButton);
+//console.log(overlay);
+//console.log(overlayButton);
+//console.log(overlayImg.src);
+
 
 
 
@@ -97,22 +101,29 @@ fetch(cardsEndpoint)
         section.innerHTML += markup //Modifico il markup
     });
     
-    const images = document.querySelectorAll('section div.col-12')
-    //const imgsObj = []
-
+    const images = document.querySelectorAll('.card-body #card-img')
+    //const cardsImg = document.querySelectorAll('card-img')
+    //console.log(images);
+    
+    
+    
     images.forEach(image => {
-        console.log(image);
-
+        //console.log(image.src);
+        
         
         image.addEventListener('click', function(){
             overlay.className = 'overlay'
+            overlayImg.src = image.src
+            
         })
         
     })
     //console.log(imgsObj);
     overlayButton.addEventListener('click', function(){
         overlay.className += ' d-none'
+        
     })
+    
     
 })
 
