@@ -4,12 +4,10 @@
     font-family: "Edu TAS Beginner", cursive;
 }
 
-body {
-    background-image: url(../assets/img/cork.png);
-}
 
 main {
     position: relative;
+    background-image: url(../assets/img/cork.png);
 }
 
 img {
@@ -102,6 +100,12 @@ div.card.rounded-0:hover {
     border: none;
     font-size: xx-large;
     color: red;
+}
+
+.overlay button:hover {
+    translate: 0% -3px;
+    font-size: 34px ;
+    
 }
 
 /*--------MEDIA QUERY--------*/
